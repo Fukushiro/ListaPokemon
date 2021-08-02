@@ -13,7 +13,6 @@ const routes: React.FC = () => {
       {(() => {
         let coisas = [];
         for (let i = 1; i < 201; i++) {
-          let nome = 'poke' + i;
           coisas.push(
             <Stack.Screen name={'poke' + i} key={i}>
               {(props) => <PokemonView {...props} id={i} />}
@@ -22,9 +21,6 @@ const routes: React.FC = () => {
         }
         return coisas;
       })()}
-      {/* <Stack.Screen name="poke">
-        {(props) => <PokemonView {...props} id={1} />}
-      </Stack.Screen> */}
     </Stack.Navigator>
   );
 };
