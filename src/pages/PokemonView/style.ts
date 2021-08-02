@@ -27,10 +27,11 @@ const style = StyleSheet.create({
   scrollContainerTypeText: { textAlign: 'center', fontSize: 20 },
   scrollContainerStatus: {
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
   },
   scrollContainerStatusTitle: { textAlign: 'center', fontSize: 22 },
-  scrollContainerStatusText: { textAlign: 'center', fontSize: 20 },
+  scrollContainerStatusArea: { flexDirection: 'row' },
+  scrollContainerStatusText: { fontSize: 20, width: '45%' },
 });
 
 export default style;
